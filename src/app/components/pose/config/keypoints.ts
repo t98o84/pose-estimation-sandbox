@@ -1,0 +1,68 @@
+/**
+ * キーポイントの定義
+ * ポーズ検出で使用する関節点の座標定義
+ */
+
+// MoveNet/Cocoモデルのキーポイント定義
+export const cocoKeyPoints = {
+  nose: { index: 0, name: "nose" },
+  leftEye: { index: 1, name: "left_eye" },
+  rightEye: { index: 2, name: "right_eye" },
+  leftEar: { index: 3, name: "left_ear" },
+  rightEar: { index: 4, name: "right_ear" },
+  leftShoulder: { index: 5, name: "left_shoulder" },
+  rightShoulder: { index: 6, name: "right_shoulder" },
+  leftElbow: { index: 7, name: "left_elbow" },
+  rightElbow: { index: 8, name: "right_elbow" },
+  leftWrist: { index: 9, name: "left_wrist" },
+  rightWrist: { index: 10, name: "right_wrist" },
+  leftHip: { index: 11, name: "left_hip" },
+  rightHip: { index: 12, name: "right_hip" },
+  leftKnee: { index: 13, name: "left_knee" },
+  rightKnee: { index: 14, name: "right_knee" },
+  leftAnkle: { index: 15, name: "left_ankle" },
+  rightAnkle: { index: 16, name: "right_ankle" },
+} as const;
+
+// BlazePoseモデルのキーポイント定義
+export const blazePoseKeyPoints = {
+  nose: { index: 0, name: "nose" },
+  leftEyeInner: { index: 1, name: "left_eye_inner" },
+  leftEye: { index: 2, name: "left_eye" },
+  leftEyeOuter: { index: 3, name: "left_eye_outer" },
+  rightEyeInner: { index: 4, name: "right_eye_inner" },
+  rightEye: { index: 5, name: "right_eye" },
+  rightEyeOuter: { index: 6, name: "right_eye_outer" },
+  leftEar: { index: 7, name: "left_ear" },
+  rightEar: { index: 8, name: "right_ear" },
+  mouthLeft: { index: 9, name: "mouth_left" },
+  mouthRight: { index: 10, name: "mouth_right" },
+  leftShoulder: { index: 11, name: "left_shoulder" },
+  rightShoulder: { index: 12, name: "right_shoulder" },
+  leftElbow: { index: 13, name: "left_elbow" },
+  rightElbow: { index: 14, name: "right_elbow" },
+  leftWrist: { index: 15, name: "left_wrist" },
+  rightWrist: { index: 16, name: "right_wrist" },
+  leftPinky: { index: 17, name: "left_pinky" },
+  rightPinky: { index: 18, name: "right_pinky" },
+  leftIndex: { index: 19, name: "left_index" },
+  rightIndex: { index: 20, name: "right_index" },
+  leftThumb: { index: 21, name: "left_thumb" },
+  rightThumb: { index: 22, name: "right_thumb" },
+  leftHip: { index: 23, name: "left_hip" },
+  rightHip: { index: 24, name: "right_hip" },
+  leftKnee: { index: 25, name: "left_knee" },
+  rightKnee: { index: 26, name: "right_knee" },
+  leftAnkle: { index: 27, name: "left_ankle" },
+  rightAnkle: { index: 28, name: "right_ankle" },
+  leftHeel: { index: 29, name: "left_heel" },
+  rightHeel: { index: 30, name: "right_heel" },
+  leftFootIndex: { index: 31, name: "left_foot_index" },
+  rightFootIndex: { index: 32, name: "right_foot_index" },
+  bodyCenter: { index: 33, name: "bodyCenter" },
+  forehead: { index: 34, name: "forehead" },
+  leftFootThumb: { index: 35, name: "leftThumb" },
+  leftHand: { index: 36, name: "leftHand" },
+  rightFootThumb: { index: 37, name: "rightThumb" },
+  rightHand: { index: 38, name: "rightHand" },
+} as const;
