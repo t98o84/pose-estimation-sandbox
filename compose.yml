@@ -1,0 +1,16 @@
+services:
+  node:
+    image: node:22-slim
+    volumes:
+      - .:/app:cached
+      - node-modules:/app/node_modules
+    working_dir: /app
+    tty: true
+    stdin_open: true
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "${WEB_PORT}:3000"
+
+volumes:
+  node-modules:
+    driver: local
